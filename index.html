@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Pixel Art Maker!</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div id="container">
-            <h1>Lab: Pixel Art Maker</h1>
+	<head>
+		<meta charset="utf-8">
+		<title>Pixel Art Maker!</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body onload="list()">
+		<div id="container">
+			<div id="main">
+				<div class="top">
+						<h1>Lab: Pixel Art Maker</h1>
 
-            <h2>Choose Grid Size</h2>
-            <form id="sizePicker">
-                Grid Height:
-                <input type="number" id="inputHeight" name="height" min="1" max="50" value="10">
-                Grid Width:
-                <input type="number" id="inputWeight" name="width" min="1" max="50" value="10">
-                <input type="submit">
-            </form>
+						<h2>Choose Grid Size</h2>
+						<form id="sizePicker">
+							<div class="size-selector">
+								<div class="input-field">
+									Height:
+									<input type="number" id="inputHeight" name="height" min="1" max="28" value="5">
+								</div>
+								<div class="input-field">
+									Width:
+									<input type="number" id="inputWeight" name="width" min="1" max="42" value="5">
+								</div>
+							</div>
+							<div>
+								<input type="submit" id="submit">
+							<div>
+						</form>
 
-            <h2>Pick A Color</h2>
-            <input type="color" id="colorPicker">
+					<div class="color-picker">
+						<h2>Pick A Color</h2>
+						<input type="color" id="colorPicker">
+					</div>
+				</div>
 
-            <h2>Design Canvas</h2>
-            <table id="pixelCanvas"></table>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="designs.js"></script>
-    </body>
+				<div class="bottom">
+					<div>
+							<div class="gallery">
+								<h2>Saved Files</h2>
+							</div> 
+							<div class="list">
+								<ul id="fileList"></ul>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div id="sideBar">
+				<h2>Design Canvas</h2>
+				<table id="pixelCanvas"></table>
+				<div id="buttonField">
+						<a id="download">save</a>
+				</div>		
+			</div>
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="designs.js"></script>
+		<script src="app.js"></script>
+	</body>
 </html>

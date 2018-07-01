@@ -1,20 +1,30 @@
 # Pixel Art Maker Project
 
-## Table of Contents
+## Screenshot
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+![pixelart](https://user-images.githubusercontent.com/40608091/42134794-09809bfc-7d3a-11e8-819a-72689a77e210.PNG)
 
-## Instructions
 
-To get started, open `designs.js` and start building out the app's functionality.
+## Description
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+This is pixel art project is the final requirement for completing the Google Africa Challenge Scholarship: Front-End.
 
-## Contributing
+## How to use
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+* Create a grid by submitting the with and height of the intended grid.
+* Click the cells of the grid to add design, click an already designed clear that cell.
+* Save design by clicking the save button.
+* Clicking on list item to open that file.
+* Delete design by clicking the delete button.
+
+## Features
+
+* Create grid
+* Design pixel art
+* Save pixel art
+* Display saved pixel art
+* Delete saved pixel art
 
 ## Link
 
- https://colossalboss.github.io/
+https://colossalboss.github.io
