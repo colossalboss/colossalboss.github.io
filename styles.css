@@ -45,8 +45,6 @@ body {
 	width: 34%;
 	background-color: #96858f;
 	height: 100vmin;
-	top: 0px;
-	left: 0px;
 }
 
 
@@ -96,6 +94,7 @@ tr {
 	height: 20px;
 }
 
+
 .size-selector {
 	display: flex;
 	padding: 10px;
@@ -108,9 +107,11 @@ tr {
 	margin: 0 5px 0 0;
 }
 
+
 td {
 	width: 20px;
 }
+
 
 @media screen and (max-width: 400px) {
 	td {
@@ -139,13 +140,16 @@ td {
 
 input[type=number] {
 	width: 10em;
+	padding: 7px;
 }
+
 
 input[type=submit] {
 	width: 10em;
 	background-color: lavenderblush;
 	padding: 7px;
 }
+
 
 input {
 	border-radius: 4px;
@@ -177,7 +181,11 @@ li:hover {
 
 input:hover {
 	border: 1px solid black;
-	padding: 7px;
+}
+
+
+#colorPicker:hover {
+	cursor: pointer;
 }
 
 
